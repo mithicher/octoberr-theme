@@ -1,0 +1,38 @@
+/*----------------------------------------------------- 
+	Forms
+-----------------------------------------------------*/
+
+form {
+	@include margin-bottom();
+}
+
+input,
+textarea {
+	padding: 0.6em;
+	width: 100%;
+	@include box-sizing(border-box);
+	border: 1px solid darken($color__white, 10%);
+}
+
+label {
+	margin-bottom: 1em;
+}
+
+label,
+input,
+textarea {
+	display: block;
+}
+
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+button {
+	display: inline;
+	width: auto;
+}
+
+label input,
+label textarea {
+	margin-top: 0.6em;
+}

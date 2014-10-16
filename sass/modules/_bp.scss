@@ -1,0 +1,14 @@
+/*-----------------------------------------------------
+	Breakpoints
+-----------------------------------------------------*/
+@mixin MQ($canvas) {
+  @if $canvas == breakpoint__small {
+   @media only screen and (min-width: $breakpoint__small) { @content; } 
+  }
+  @else if $canvas == breakpoint__medium {
+   @media only screen and (min-width: $breakpoint__medium) { @content; } 
+  }
+  @else if $canvas == breakpoint__large {
+   @media only screen and (min-width: $breakpoint__large) { @content; } 
+  }
+}

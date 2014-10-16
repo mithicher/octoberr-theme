@@ -1,0 +1,68 @@
+/*-----------------------------------------------------
+	Settings
+-----------------------------------------------------*/
+
+// Width
+$container__maxwidth: 62.5em;
+
+// Break Points
+$breakpoint__small  : 30.063em;
+$breakpoint__medium : 48.063em;
+$breakpoint__large  : 64.063em;
+
+// Colors
+$color__red 	: #e74c3c;
+$color__blue 	: #4b90e2;
+$color__purple  : #666699;
+$color__green   : #27ae60;
+$color__gray    : #abbeca;
+$color__yellow  : #fac75b;
+$color__white   : #ffffff;
+$color__black   : #434a54;
+$color__black--light  : #444444;
+
+$primary__color  	: $color__green;
+$success__color     : $color__green;
+$info__color 	 	: $color__blue;
+$tertiary__color 	: $color__purple;
+$secondary__color 	: $color__gray;
+$warning__color  	: $color__yellow;
+$alert__color    	: $color__red;
+
+// Base Font-size
+$base__font-size : 1em;
+$base__line 	 : 1.6;
+//$baseline : ($base-font-size * 1.5);
+
+// Typography
+$body__font-family : "Lato-Regular", "Helvetica Nue", Arial, sans-serif;
+$body__font-family--italic : "Lato-Italic", "Helvetica Nue", Arial, sans-serif;
+$head__font-family : "Lato-Bold", "Helvetica Nue", serif;
+
+// Text color
+$body__font-color  			: 	$color__black--light;
+$body__font-color--light 	: 	lighten($color__black--light, 12%);
+$head__font-color 			: 	$color__black;
+
+// Selection Color
+$color__highlight: $primary__color;
+
+// Links
+$color__link : $success__color;
+$color__link--hover : darken($color__link, 10%);
+
+// hr
+$color__hr: #ccc;
+
+// Buttons
+$btn__success 	: $primary__color;
+$btn__blue 		: $info__color;
+$btn__alert 	: $alert__color;
+$btn__warning 	: $warning__color;
+$btn__secondary : $secondary__color;
+
+// Base Radius
+$global__radius: 3px;
+
+// Transition
+$global__trans: all 0.35s ease-out;

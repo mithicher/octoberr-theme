@@ -1,0 +1,32 @@
+/*----------------------------------------------------- 
+  Mixins
+-----------------------------------------------------*/
+// Opacity 
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// font
+// @mixin text($size, $line: $base__line, $margin: 0, $family: $body__font-family, $color: $body__font-color, $weight: normal) {
+//   font-size: em($size);
+//   font-family: $family;
+//   font-weight: $weight;
+//   line-height: $line; //($line/$size)
+//   color: $color;
+//   margin-bottom: em($margin, $size);
+// }
+
+@mixin font-size($size: 1, $line: $size * $base__line) {
+  font-size: ($size * 16) + px;
+  line-height: ($line * 16) + px;
+  font-size: $size + rem;
+  line-height: $line + rem;
+}
+
+// margin-bottom
+@mixin margin-bottom($margin: $base__line) {
+  margin-bottom: ($margin * 16) + px;
+  margin-bottom: $margin + rem;
+}

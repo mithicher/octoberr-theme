@@ -1,0 +1,29 @@
+/*-----------------------------------------------------
+	Panels
+-----------------------------------------------------*/
+.panel {
+	padding: 1.4em;
+	background-color: darken($color__white, 8%);
+	color: $body__font-color;
+	@include margin-bottom();
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.panel__blue {
+	background-color: $info__color;
+	color: #fff;
+}
+
+.panel__secondary {
+	background-color: $secondary__color;
+	color: #fff
+}
+
+.panel__red {
+	background-color: $alert__color;
+	color: #fff
+}
+

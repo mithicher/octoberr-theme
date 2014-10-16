@@ -1,0 +1,117 @@
+/*-----------------------------------------------------
+  Nav
+-----------------------------------------------------*/
+
+.top-header {
+	background-color: $color__black;
+
+	@include MQ(breakpoint__medium) {
+		height: 80px;
+		line-height: 80px;
+	}
+}
+
+.logo {
+	@include font-size(1.6);
+	font-family: inherit;
+	color: $color__white;
+	border: 0;
+	&:hover {
+		border: 0;
+		color: #eee;
+	}
+}
+
+// Toggle Link
+.toggle-link {
+	float: right;
+    display: block;
+    padding: 0.2em 0.4em;
+    @include font-size(1.5);
+    border: 0;
+    color: $color__white;
+    outline: none;
+
+    &:hover, &:active {
+    	border: 0;
+    	color: $color__hr;
+    }
+}
+
+// navigation
+nav[role=navigation] {
+	clear: both;
+	@include transition($global__trans);
+}
+
+.js nav[role=navigation] {
+	overflow: hidden;
+	max-height: 0;
+}
+
+nav[role=navigation].active {
+	max-height: 20em;
+}
+
+nav[role=navigation] ul {
+	margin: 0;
+	padding: 0;
+	//border-top: 1px solid $color__hr;
+}
+// nav[role=navigation] li {
+// 	border-top: 1px solid $color__hr;
+// }
+nav[role=navigation] li a {
+	display: block;
+	padding: 0.5em;
+	border-top: 1px solid lighten($color__black, 5%);
+	border-bottom: 0;
+	//text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	color: darken(white, 15%);
+
+	&:hover, &:focus {
+		color: $primary__color;
+		border-bottom: 0;
+		@include box-shadow(none);
+	}
+}
+
+@include MQ(breakpoint__medium) {
+	.toggle-link {
+		display: none;
+	}
+
+	.js nav[role=navigation] {
+		max-height: none;
+	}
+
+	nav[role=navigation] {
+		float: right;
+		//margin-top: 0.245em;
+	}
+
+	nav[role=navigation] ul {
+		margin: 0 0 0 -0.625em;
+		border: 0;
+	}
+
+	nav[role=navigation]  li {
+		display: inline-block;
+		margin: 0 0.625em;
+	}
+
+	nav[role=navigation] li a {
+		display: block;
+		border: 0;
+		padding: 0 0.125em;
+		@include font-size(0.9);
+	}
+
+	nav[role=navigation] li.active a,
+	nav[role=navigation] li a:hover {
+		color: #fff;
+		@include box-shadow(0 1px 0 $primary__color);
+	}
+}

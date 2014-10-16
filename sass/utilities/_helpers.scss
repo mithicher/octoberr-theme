@@ -1,0 +1,34 @@
+/*-----------------------------------------------------
+  Helpers
+-----------------------------------------------------*/
+.text__left    { text-align: left;   }
+.text__right   { text-align: right;  }
+.text__center  { text-align: center; }
+.text__justify { text-align: justify;}
+
+.text__italic  		{ font-style: italic; 			}
+.text__uppercase 	{ text-transform: uppercase; 	}
+
+.text__red 			{ color: $alert__color; }
+.text__green 		{ color: $success__color; }
+.text__blue 		{ color: $info__color; }
+.text__secondary 	{ color: $secondary__color; }
+
+.block__center { display: block; margin-left: auto; margin-right: auto; }
+
+.align__left   {  @include float-left;    }
+.align__right  {  @include float-right;   }
+
+.clearfix 	{ @include clearfix;  				}
+.radius 	{ @include border-radius($global__radius); 	}
+.rounded   	{ @include border-radius(50%); 		}
+
+.has__padding--tb 	{ padding-top: 2em; padding-bottom: 2em; }
+.has__padding--tblg { padding-top: 4em; padding-bottom: 4em; }
+.has__margin--b { @include margin-bottom(); }
+.has__margin--t { margin-top: 1.6em; 		}
+
+.bg__gray 		{ background-color: darken($color__white, 8%); }
+.bg__blue 		{ background-color: $info__color; 		}
+.bg__green 		{ background-color: $success__color; 	}
+.bg__secondary 	{ background-color: $secondary__color;	}

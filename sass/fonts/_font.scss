@@ -1,0 +1,52 @@
+/*-----------------------------------------------------
+	Fonts
+-----------------------------------------------------*/
+@font-face {
+  font-family: "Lato-Regular";
+  src:url("../fonts/Lato-Regular.eot?") format("eot"),
+  url("../fonts/Lato-Regular.woff") format("woff"),
+  url("../fonts/Lato-Regular.ttf") format("truetype"),
+  url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight :normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.eot');
+  src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lato-Bold.woff') format('woff'),
+       url('../fonts/Lato-Bold.ttf') format('truetype'),
+       url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('../fonts/Lato-Italic.eot');
+  src: url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lato-Italic.woff') format('woff'),
+       url('../fonts/Lato-Italic.ttf') format('truetype'),
+       url('../fonts/Lato-Italic.svg#Lato-Italic') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/raleway-bold.eot');
+  src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-bold.woff') format('woff'),
+       url('../fonts/raleway-bold.ttf') format('truetype'),
+       url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('truetype'),
+         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
